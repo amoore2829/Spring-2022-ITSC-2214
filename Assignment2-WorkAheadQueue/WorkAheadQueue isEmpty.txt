@@ -1,0 +1,9 @@
+/**
+ * Returns true if the collection contains no elements
+ *
+ * @return true if the collection is empty
+ */
+@Override
+public boolean isEmpty() {
+	return numNodes == 0;
+}

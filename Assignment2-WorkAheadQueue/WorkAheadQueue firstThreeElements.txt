@@ -1,0 +1,23 @@
+/**
+ * Returns an ArrayList of the first three elements in the queue.
+ * @return ArrayList<T> array list of elements
+ * @throws EmptyCollectionException if the queue is empty
+ */
+@Override
+public ArrayList<T> firstThreeElements() throws
+		EmptyCollectionException {
+	if (isEmpty()) {
+		throw new EmptyCollectionException("firstThreeElements(): empty "
+				+ "queue");
+	}
+
+	frontThreeElements.clear();
+	LinearNode<T> curr = front;
+
+	for (int i = 0; i < 3 && i < size(); i++) {
+		frontThreeElements.add(i, curr.getElement());
+		curr = curr.getNext();
+	}
+	
+	return frontThreeElements;
+}

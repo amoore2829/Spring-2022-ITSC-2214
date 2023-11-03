@@ -1,0 +1,3 @@
+check LinkedTree
+test LinkedTreeTest
+exit

@@ -1,0 +1,18 @@
+/**
+ * Returns a string representation of the collection
+ *
+ * @return a string representation of the collection
+ */
+@Override
+public String toString() {
+	StringBuilder sb = new StringBuilder("");
+	LinearNode curr = front;
+	for (int i = 0; i < size(); i++) {
+		sb.append(curr.getElement().toString());
+		if (i < size() - 1) {
+			sb.append(", ");
+		}
+		curr = curr.getNext();
+	}
+	return sb.toString();
+}

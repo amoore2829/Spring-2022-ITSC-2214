@@ -1,0 +1,96 @@
+/**
+ * Test of dequeue method for EmptyCollectionException, of class 
+ * WorkAheadQueue.
+ */
+@Test
+public void testDequeue_int_ECE() {
+	// Empty collection exception is thrown when collection is empty
+	try {
+		instance = new WorkAheadQueue<>();
+		instance.dequeue(0);
+		fail("Expected ECE did not occur - dequeue(x)");
+	}
+	catch (EmptyCollectionException | InvalidArgumentException e) {
+		assertTrue(e instanceof EmptyCollectionException);
+	}
+}
+
+/**
+ * Test of dequeue method for InvalidArgumentException, of class 
+ * WorkAheadQueue.
+ */
+@Test
+public void testDequeue_int_IAE() {
+	/* Invalid argument exception is thrown when argument exceeds the size 
+	of the ArrayList or the Queue */
+	for (int i = 3; i > 1; i--) {
+		instance = new WorkAheadQueue<>();
+		for (int j = 0; j < i; j++) {
+			instance.enqueue(1);
+		}
+		try {
+			instance.dequeue(i);
+			fail("Expected IAE did not occur - dequeue(x)");
+		}
+		catch (EmptyCollectionException | InvalidArgumentException e) {
+			assertTrue(e instanceof InvalidArgumentException);
+		}
+	}
+}
+
+/**
+ * Test of dequeue method, of class WorkAheadQueue.
+ */
+@Test
+public void testDequeue_int() {
+	// Dequeueing elements changes the size of the queue
+	for (int i = 0; i < 4; i++) {
+		instance.enqueue(i);
+	}
+	
+	int size = 4;
+	assertEquals("After enqueueing N elements, the size of the queue "
+			+ "should be N.", size, instance.size());
+	
+	for (int i = 2; i >= 0; i--) {
+		try {
+			instance.dequeue(i);
+			assertEquals("Dequeueing elements should decrease the size of "
+					+ "the queue.", --size, instance.size());
+		}
+		catch (EmptyCollectionException | InvalidArgumentException e) {
+			fail("Unexpected " + e.getClass().getSimpleName() 
+					+ " occurred - dequeue(x)");
+		}
+	}
+
+	// Elements that are dequeued from the front are no longer at the front
+	// The method returns the element that was removed
+	instance = new WorkAheadQueue<>();
+	instance.enqueue(1);
+	instance.enqueue(2);
+	try {
+		assertEquals("The first element enqueued should be returned by the "
+				+ "first method.", new Integer(1), instance.first());
+	}
+	catch (EmptyCollectionException e) {
+		fail("Unexpected " + e.getClass().getSimpleName() 
+				+ " occurred - first()");
+	}
+	try {
+		assertEquals("Dequeueing the element from the front should return "
+				+ "it.", new Integer(1), instance.dequeue(0));
+	}
+	catch (EmptyCollectionException | InvalidArgumentException e) {
+		fail("Unexpected " + e.getClass().getSimpleName() 
+				+ " occurred - dequeue(x)");
+	}
+	try {
+		assertEquals("An element should no longer be at the front once it "
+				+ "has been dequeued.", new Integer(2), instance.first());
+	}
+	catch (EmptyCollectionException e) {
+		fail("Unexpected " + e.getClass().getSimpleName() 
+				+ " occurred - first()");
+	}
+}

@@ -1,0 +1,9 @@
+/**
+ * Returns the number of elements in the collection
+ *
+ * @return the number of elements as an int
+ */
+@Override
+public int size() {
+	return numNodes;
+}

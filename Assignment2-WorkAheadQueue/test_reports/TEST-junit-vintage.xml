@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JUnit Vintage" tests="12" skipped="0" failures="0" errors="0" time="0.031" hostname="7ffa74429dcd" timestamp="2022-04-11T02:38:45">
+<properties>
+<property name="file.encoding" value="UTF-8"/>
+<property name="file.separator" value="/"/>
+<property name="java.class.path" value="./lib/junit-platform-console-standalone-1.8.0-RC1.jar"/>
+<property name="java.class.version" value="61.0"/>
+<property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
+<property name="java.io.tmpdir" value="/tmp"/>
+<property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+<property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+<property name="java.runtime.version" value="17.0.2+8-Ubuntu-120.04"/>
+<property name="java.specification.name" value="Java Platform API Specification"/>
+<property name="java.specification.vendor" value="Oracle Corporation"/>
+<property name="java.specification.version" value="17"/>
+<property name="java.vendor" value="Private Build"/>
+<property name="java.vendor.url" value="Unknown"/>
+<property name="java.vendor.url.bug" value="Unknown"/>
+<property name="java.version" value="17.0.2"/>
+<property name="java.version.date" value="2022-01-18"/>
+<property name="java.vm.compressedOopsMode" value="32-bit"/>
+<property name="java.vm.info" value="mixed mode, sharing"/>
+<property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+<property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+<property name="java.vm.specification.version" value="17"/>
+<property name="java.vm.vendor" value="Private Build"/>
+<property name="java.vm.version" value="17.0.2+8-Ubuntu-120.04"/>
+<property name="jdk.debug" value="release"/>
+<property name="line.separator" value="
+"/>
+<property name="native.encoding" value="UTF-8"/>
+<property name="os.arch" value="amd64"/>
+<property name="os.name" value="Linux"/>
+<property name="os.version" value="5.13.0-1021-aws"/>
+<property name="path.separator" value=":"/>
+<property name="sun.arch.data.model" value="64"/>
+<property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
+<property name="sun.cpu.endian" value="little"/>
+<property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+<property name="sun.java.command" value="./lib/junit-platform-console-standalone-1.8.0-RC1.jar --disable-banner --reports-dir test_reports --details tree -cp ./target:./lib:./src:.:lib/junit-platform-console-standalone-1.8.0-RC1.jar:lib/pitest-command-line.jar:lib/pitest-entry.jar:lib/pitest-junit5-plugin.jar:lib/pitest.jar -m DataStructures.WorkAheadQueueTest#testDequeue_int -m DataStructures.WorkAheadQueueTest#testFirst_int -m DataStructures.WorkAheadQueueTest#testFirstThreeNodes -m DataStructures.WorkAheadQueueTest#testFirstThreeElements -m DataStructures.WorkAheadQueueTest#testEnqueue -m DataStructures.WorkAheadQueueTest#testDequeue_0args -m DataStructures.WorkAheadQueueTest#testFirst_0args -m DataStructures.WorkAheadQueueTest#testIsEmpty -m DataStructures.WorkAheadQueueTest#testSize -m DataStructures.WorkAheadQueueTest#testDequeue_int_ECE -m DataStructures.WorkAheadQueueTest#testDequeue_int_IAE -m DataStructures.WorkAheadQueueTest#testDequeue_int2"/>
+<property name="sun.java.launcher" value="SUN_STANDARD"/>
+<property name="sun.jnu.encoding" value="UTF-8"/>
+<property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+<property name="user.country" value="US"/>
+<property name="user.dir" value="/usercode"/>
+<property name="user.home" value="/home/mysql"/>
+<property name="user.language" value="en"/>
+<property name="user.name" value="mysql"/>
+<property name="user.timezone" value="Etc/UTC"/>
+</properties>
+<testcase name="testIsEmpty" classname="DataStructures.WorkAheadQueueTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:DataStructures.WorkAheadQueueTest]/[test:testIsEmpty(DataStructures.WorkAheadQueueTest)]
+display-name: testIsEmpty
+]]></system-out>
+</testcase>
+<testcase name="testFirstThreeElements" classname="DataStructures.WorkAheadQueueTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:DataStructures.WorkAheadQueueTest]/[test:testFirstThreeElements(DataStructures.WorkAheadQueueTest)]
+display-name: testFirstThreeElements
+]]></system-out>
+</testcase>
+<testcase name="testDequeue_int2" classname="DataStructures.WorkAheadQueueTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:DataStructures.WorkAheadQueueTest]/[test:testDequeue_int2(DataStructures.WorkAheadQueueTest)]
+display-name: testDequeue_int2
+]]></system-out>
+</testcase>
+<testcase name="testDequeue_0args" classname="DataStructures.WorkAheadQueueTest" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:DataStructures.WorkAheadQueueTest]/[test:testDequeue_0args(DataStructures.WorkAheadQueueTest)]
+display-name: testDequeue_0args
+]]></system-out>
+</testcase>
+<testcase name="testEnqueue" classname="DataStructures.WorkAheadQueueTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:DataStructures.WorkAheadQueueTest]/[test:testEnqueue(DataStructures.WorkAheadQueueTest)]
+display-name: testEnqueue
+]]></system-out>
+</testcase>
+<testcase name="testDequeue_int_ECE" classname="DataStructures.WorkAheadQueueTest" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:DataStructures.WorkAheadQueueTest]/[test:testDequeue_int_ECE(DataStructures.WorkAheadQueueTest)]
+display-name: testDequeue_int_ECE
+]]></system-out>
+</testcase>
+<testcase name="testDequeue_int" classname="DataStructures.WorkAheadQueueTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:DataStructures.WorkAheadQueueTest]/[test:testDequeue_int(DataStructures.WorkAheadQueueTest)]
+display-name: testDequeue_int
+]]></system-out>
+</testcase>
+<testcase name="testFirstThreeNodes" classname="DataStructures.WorkAheadQueueTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:DataStructures.WorkAheadQueueTest]/[test:testFirstThreeNodes(DataStructures.WorkAheadQueueTest)]
+display-name: testFirstThreeNodes
+]]></system-out>
+</testcase>
+<testcase name="testDequeue_int_IAE" classname="DataStructures.WorkAheadQueueTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:DataStructures.WorkAheadQueueTest]/[test:testDequeue_int_IAE(DataStructures.WorkAheadQueueTest)]
+display-name: testDequeue_int_IAE
+]]></system-out>
+</testcase>
+<testcase name="testFirst_0args" classname="DataStructures.WorkAheadQueueTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:DataStructures.WorkAheadQueueTest]/[test:testFirst_0args(DataStructures.WorkAheadQueueTest)]
+display-name: testFirst_0args
+]]></system-out>
+</testcase>
+<testcase name="testFirst_int" classname="DataStructures.WorkAheadQueueTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:DataStructures.WorkAheadQueueTest]/[test:testFirst_int(DataStructures.WorkAheadQueueTest)]
+display-name: testFirst_int
+]]></system-out>
+</testcase>
+<testcase name="testSize" classname="DataStructures.WorkAheadQueueTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:DataStructures.WorkAheadQueueTest]/[test:testSize(DataStructures.WorkAheadQueueTest)]
+display-name: testSize
+]]></system-out>
+</testcase>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]
+display-name: JUnit Vintage
+]]></system-out>
+</testsuite>
